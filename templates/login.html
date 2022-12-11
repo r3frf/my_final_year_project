@@ -1,0 +1,39 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://th.bing.com/th/id/R.36ecef671715f9130bce35eb62784415?rik=MAzZ11yb2FwRbA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f8C95UpE.jpg&ehk=4Zwd2L%2bvqvvsMw1oD50Jcy%2fo410MYEmYfgwqHKHwBrM%3d&risl=&pid=ImgRaw&r=0')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Log In</h1>
+            <span class="subheading">Welcome Back!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-8 col-md-10 mx-auto content">
+        {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+      </div>
+    </div>
+
+
+    <br>
+<br>
+<br>
+    <br>
+  </div>
+
+
+
+{% endblock %}
